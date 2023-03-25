@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Guess My Number!</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container2">
+        <img
+          src="/slike/light-bulb-7293627_960_720.png"
+          alt=""
+          class="sijalica"
+        />
+        <h1>GUESS MY NUMBER!</h1>
+        <p class="guess">(Between 1 and 20)</p>
+        <form action="">
+          <input type="number" class="input" placeholder="Enter your number" />
+          <button id="btn" type="submit" onclick="preventRefreshOnSubmit()">
+            CHECK
+          </button>
+
+          <button class="btn-again">Again!</button>
+        </form>
+        <section class="right">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
